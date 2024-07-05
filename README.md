@@ -1,4 +1,4 @@
-# Welcome to the Dev Hawks Website
+# Welcome To The Dev Hawks Website
 
 ![Dev Hawks Logo](images/transpdh.png)
 
