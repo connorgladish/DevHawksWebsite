@@ -1,6 +1,6 @@
 # Welcome to Dev Hawks Club Website
 
-![Dev Hawks Logo](transpdh.png)
+![Dev Hawks Logo](images/transpdh.png)
 
 ## Introduction
 
