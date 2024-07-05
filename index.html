@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/transpdh.png" type="image/x-icon" />
+    <title>Dev Hawks UTM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo">Dev<span>Hawks</span></a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#projects">projects</a>
+        <a href="#pricing">pricing</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="info-btn" class="fas fa-info-circle"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <form action="" class="login-form">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="flex">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+          <a href="#">forgot password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>don't have an account <a href="#">create one!</a></p>
+      </form>
+    </header>
+
+    <div class="contact-info">
+      <div id="close-contact-info" class="fas fa-times"></div>
+
+      <div class="info">
+        <i class="fas fa-envelope"></i>
+        <h3>email address</h3>
+        <p>devhawksutm@gmail.com</p>
+      </div>
+
+      <div class="info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>meeting location</h3>
+        <p>Latimer-Smith Engineering Building - Room 102</p>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+    </div>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/groupdh.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Collaborate with like minded individuals.</h3>
+              <p>
+                You will be surrounded by those driven to succeed.
+              </p>
+              <a href="#about" class="btn">learn more</a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/lockpick.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Have fun while learning.</h3>
+              <p>
+                Not only do we learn while doing our projects, but we have fun during them too!
+              </p>
+              <a href="#about" class="btn">Learn More</a>
+            </div>
+          </section>
+
+          <section
+            class="swiper-slide slide"
+            style="background: url(images/competitiondh.jpg) no-repeat"
+          >
+            <div class="content">
+              <h3>Advance your Computer Science knowledge.</h3>
+              <p>
+                Here at Dev Hawks, we cultivate the best students, ready to take on the workplace.
+              </p>
+              <a href="#about" class="btn">Learn More</a>
+            </div>
+          </section>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading">about us</h1>
+
+      <div class="row">
+        <div class="video">
+          <video src="images/LatimerSmith_0.mp4" loop muted autoplay></video>
+        </div>
+
+        <div class="content">
+          <h3>Here at the University of Tennessee at Martin, we strive for excellence.</h3>
+          <p>
+            Why wouldn't you want to be part of the best? Dev Hawks boasts several accomplishments stemming from even the first year it was established.
+          </p>
+          <a href="#services" class="btn">read more</a>
+        </div>
+      </div>
+
+      <div class="box-container">
+        <div class="box">
+          <h3>3+</h3>
+          <p>Fun Activities Each Semester!</p>
+        </div>
+
+        <div class="box">
+          <h3>10+</h3>
+          <p>Impressive Projects Each Semester!</p>
+        </div>
+
+        <div class="box">
+          <h3>5+</h3>
+          <p>Outgoing Officers!</p>
+        </div>
+
+        <div class="box">
+          <h3>45+</h3>
+          <p>Active Members!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- events section starts  -->
+
+    <section class="events" id="events">
+      <h1 class="heading">our events</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/hackathon.png" alt="" />
+          <h3>hackathons</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/programming.png" alt="" />
+          <h3>programming competitions</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/ctf.png" alt="" />
+          <h3>Capture the Flag</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/resume.png" alt="" />
+          <h3>Resume Workshops</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/speaker.png" alt="" />
+          <h3>Professional Guest Speakers</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/social.png" alt="" />
+          <h3>Social Events</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/collab.png" alt="" />
+          <h3>Collaborative Projects</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="images/console.png" alt="" />
+          <h3>Game Nights</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+            necessitatibus.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- events section ends -->
+
+    <!-- environments section starts  -->
+
+    <section class="environments" id="environments">
+      <h1 class="heading">our environment</h1>
+
+      <div class="box-container">
+        <a href="images/cyberlab.jpg" class="box">
+          <div class="image">
+            <img src="images/cyberlab.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Cybersecurity Lab</h3>
+              <p>Loren Ipsum</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/complab.jpg" class="box">
+          <div class="image">
+            <img src="images/complab.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Computer Science Lab</h3>
+              <p>Loren Ipsum</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/studylab.jpg" class="box">
+          <div class="image">
+            <img src="images/studylab.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>STEM Study Area</h3>
+              <p>Loren Ipsum</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/englab.jpg" class="box">
+          <div class="image">
+            <img src="images/englab.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Engineering Project Lab</h3>
+              <p>Loren Ipsum</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/lattop.jpg" class="box">
+          <div class="image">
+            <img src="images/lattop.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>State of the Art Building</h3>
+              <p>Loren Ipsum</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/logocolordh.jpg" class="box">
+          <div class="image">
+            <img src="images/logocolordh.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Loren Ipsum</h3>
+              <p>Loren Ipsum</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- environments section ends -->
+
+    <!-- Officers section starts -->
+
+    <section class="officers" id="officers">
+      <h1 class="heading">our Officers</h1>
+
+      <div class="box-container">
+        <a href="images/qing.jpg" class="box">
+          <div class="image">
+            <img src="images/qing.jpg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Dr. Qing Wang</h3>
+              <p>Advisor</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/cjheadshot.png" class="box">
+          <div class="image">
+            <img src="images/cjheadshot.png" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Connor Gladish</h3>
+              <p>President</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/blankuser.jpeg" class="box">
+          <div class="image">
+            <img src="images/blankuser.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Josiah Tripp</h3>
+              <p>Vice President</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/blankuser.jpeg" class="box">
+          <div class="image">
+            <img src="images/blankuser.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Maddie Hardin</h3>
+              <p>Treasurer</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/blankuser.jpeg" class="box">
+          <div class="image">
+            <img src="images/blankuser.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Dylan Pruitt</h3>
+              <p>Secretary</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+
+        <a href="images/blankuser.jpeg" class="box">
+          <div class="image">
+            <img src="images/blankuser.jpeg" alt="" />
+          </div>
+          <div class="content">
+            <div class="info">
+              <h3>Aaron Lawson</h3>
+              <p>Social Media Ambassador</p>
+            </div>
+            <i class="fas fa-plus"></i>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Officers section ends -->
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews">
+      <h1 class="heading">clients reviews</h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              unde suscipit quis consequuntur, tempora corporis ex molestias
+              dignissimos in cumque sunt ducimus voluptate inventore harum earum
+              rem aperiam vel modi?
+            </p>
+            <div class="user">
+              <img src="images/blankuser.jpeg" alt="" />
+              <div class="info">
+                <h3>josiah tripp</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              I think the President and Vice President did a great job of putting the club together and generating interest for it.
+              Though I was unable to attend all of the meetings, I was still able to see that a majority of the members were active and interested in the club's activities.
+              Even outside of the club space, everyone kept the Discord server active and most members played games together. Everyone always seemed to look forward to the next meeting.
+              I think there was an impressive amount of dedicated members that consistently showed up and brought the club to life, despite how new it is!
+            </p>
+            <div class="user">
+              <img src="images/blankuser.jpeg" alt="" />
+              <div class="info">
+                <h3>Maddie Hardin</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Joining DevHawks was the best decision I made in college. 
+              The club meetings were dynamic and inclusive, fostering a collaborative environment where everyone's ideas were valued. 
+              I can confidently say I've expanded my knowledge and skills significantly.
+            </p>
+            <div class="user">
+              <img src="images/blankuser.jpeg" alt="" />
+              <div class="info">
+                <h3>Blank name</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              unde suscipit quis consequuntur, tempora corporis ex molestias
+              dignissimos in cumque sunt ducimus voluptate inventore harum earum
+              rem aperiam vel modi?
+            </p>
+            <div class="user">
+              <img src="images/blankuser.jpeg" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              unde suscipit quis consequuntur, tempora corporis ex molestias
+              dignissimos in cumque sunt ducimus voluptate inventore harum earum
+              rem aperiam vel modi?
+            </p>
+            <div class="user">
+              <img src="images/blankuser.jpeg" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              unde suscipit quis consequuntur, tempora corporis ex molestias
+              dignissimos in cumque sunt ducimus voluptate inventore harum earum
+              rem aperiam vel modi?
+            </p>
+            <div class="user">
+              <img src="images/blankuser.jpeg" alt="" />
+              <div class="info">
+                <h3>john deo</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews section ends -->
+
+    <!-- pricing section starts  -->
+
+    <section class="pricing" id="pricing">
+      <h1 class="heading">our pricing</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-home"></i>
+          <h3>Visitor/Guest</h3>
+          <div class="price"><span>$</span>FREE<span>/semester</span></div>
+          <div class="list">
+            <p>ANYONE CAN ATTEND!</p>
+            <p>Will not be able to vote new Officers</p>
+            <p>Will not be able to represent Dev Hawks in Competitions</p>
+            <p>Will not be able to receieve member-only benefits - such as shirts and stickers</p>
+            <p>Will be able to have a great time hanging out with the club</p>
+          </div>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-building"></i>
+          <h3>Member</h3>
+          <div class="price"><span>$</span>15<span>/semester</span></div>
+          <div class="list">
+            <p>Full access to all the club has to offer</p>
+            <p>Receive member-only benefits each year</p>
+            <p>Can represent the club in competitions</p>
+            <p>Be a part of a growing community</p>
+            <p>Most Popular Option</p>
+          </div>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-city"></i>
+          <h3>Officer</h3>
+          <div class="price"><span>$</span>15<span>/semester</span></div>
+          <div class="list">
+            <p>Must Run For Election And Be Voted In</p>
+            <p>Must Be Familiar With The Club's Bylaws</p>
+            <p>Orchestrate How The Club Functions</p>
+            <p>Be A Leader In An Amazing Club</p>
+            <p>Help Keep Dev Hawks Running</p>
+          </div>
+          <a href="#" class="btn">choose plan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading">contact us</h1>
+
+      <div class="row">
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81951.47795019013!2d-88.8503!3d36.3436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887c56b519ba5183%3A0x31a21e0b92aee87f!2sMartin%2C%20TN%2048307%2C%20USA!5e0!3m2!1sen!2sin!4v1641716772852!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+
+        <form action="">
+          <h3>get in touch</h3>
+          <input type="text" placeholder="name" class="box" />
+          <input type="email" placeholder="email" class="box" />
+          <input type="number" placeholder="phone" class="box" />
+          <textarea
+            name=""
+            placeholder="message"
+            class="box"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="send message" class="btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- contact section ends -->
+
+   
+
+    <!-- logo section starts -->
+
+    <section class="logo-container">
+      <div class="swiper logo-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/dcs.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/transpdh.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/dcs.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/transpdh.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/dcs.png" alt="" />
+          </div>
+          <div class="swiper-slide slide">
+            <img src="images/transpdh.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- client logo section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="links">
+        <a class="btn" href="#home">home</a>
+        <a class="btn" href="#about">about</a>
+        <a class="btn" href="#services">Our Events</a>
+        <a class="btn" href="#projects">our environment</a>
+        <a class="btn" href="#pricing">pricing</a>
+        <a class="btn" href="#contact">contact</a>
+      </div>
+
+      <div class="credit">
+        created by
+        <a href="https://github.com/connorgladish" target="_blank">
+          <span>Connor Gladish</span>
+        </a>
+        | all rights reserved!
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script>
+      lightGallery(document.querySelector(".projects .box-container"));
+    </script>
+  </body>
+</html>
