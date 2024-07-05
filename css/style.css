@@ -647,70 +647,52 @@ section {
 }
 
 .officers .box-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr)); /* Ensure 6 columns with equal distribution */
   gap: 2rem;
 }
 
-.officers .box-container .box {
-  cursor: initial;
-}
-
-.officers .box-container .box:hover .image img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .officers .box-container .box .image {
-  height: 40rem;
+  height: 0;
+  padding-bottom: 100%; /* Maintain aspect ratio for images */
+  position: relative;
   overflow: hidden;
 }
 
 .officers .box-container .box .image img {
-  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-
-.officers .box-container .box .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: var(--white);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s linear;
 }
 
 .officers .box-container .box .content .info {
-  padding: 1rem 2rem;
+  padding: 1rem;
 }
 
 .officers .box-container .box .content .info h3 {
-  font-size: 1.7rem;
-  color: var(--black);
+  font-size: 1.5rem;
+  color: var(--white);
   text-transform: capitalize;
 }
 
 .officers .box-container .box .content .info p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--light-color);
-  line-height: 2;
+  line-height: 1.5;
 }
 
 .officers .box-container .box .content i {
-  width: 7.5rem;
-  font-size: 3rem;
+  font-size: 2rem;
   background: var(--yellow);
   color: var(--white);
   cursor: pointer;
   text-align: center;
-  line-height: 7.5rem;
+  line-height: 4rem;
+  width: 4rem;
 }
 
 .reviews .slide p {
