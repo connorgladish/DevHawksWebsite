@@ -22,6 +22,15 @@
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
 
+    <!-- Include the Lightbox CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+    <!-- Include jQuery (required for Lightbox) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Include the Lightbox JS file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -34,7 +43,8 @@
       <nav class="navbar">
         <a href="#home">home</a>
         <a href="#about">about</a>
-        <a href="#projects">projects</a>
+        <a href="#events">our Events</a>
+        <a href="#environments">Our Environment</a>
         <a href="#pricing">pricing</a>
         <a href="#contact">contact</a>
       </nav>
@@ -42,32 +52,7 @@
       <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="info-btn" class="fas fa-info-circle"></div>
-        <div id="search-btn" class="fas fa-search"></div>
-        <div id="login-btn" class="fas fa-user"></div>
       </div>
-
-      <form action="" class="search-form">
-        <input
-          type="search"
-          name=""
-          placeholder="search here..."
-          id="search-box"
-        />
-        <label for="search-box" class="fas fa-search"></label>
-      </form>
-
-      <form action="" class="login-form">
-        <h3>login form</h3>
-        <input type="email" placeholder="enter your email" class="box" />
-        <input type="password" placeholder="enter your password" class="box" />
-        <div class="flex">
-          <input type="checkbox" name="" id="remember-me" />
-          <label for="remember-me">remember me</label>
-          <a href="#">forgot password?</a>
-        </div>
-        <input type="submit" value="login now" class="btn" />
-        <p>don't have an account <a href="#">create one!</a></p>
-      </form>
     </header>
 
     <div class="contact-info">
@@ -87,9 +72,9 @@
 
       <div class="share">
         <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
+        <a href="https://www.instagram.com/devhawksutm/" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-youtube"></a>
+
       </div>
     </div>
 
@@ -118,7 +103,7 @@
             style="background: url(images/lockpick.jpg) no-repeat"
           >
             <div class="content">
-              <h3>Have fun while learning.</h3>
+              <h3>Immerse yourself in learning.</h3>
               <p>
                 Not only do we learn while doing our projects, but we have fun during them too!
               </p>
@@ -162,7 +147,7 @@
           <p>
           Why wouldn't you want to be part of the best? Dev Hawks facilitates the students who are willing to strive for <b>more.</b>
           </p>
-          <a href="#services" class="btn">read more</a>
+          <a href="#events" class="btn">read more</a>
         </div>
       </div>
 
@@ -200,27 +185,21 @@
         <div class="box">
           <img src="images/hackathon.png" alt="Hackathons" />
           <h3>Hackathons</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
+          <p> 
           </p>
         </div>
     
         <div class="box">
           <img src="images/programming.png" alt="Programming Competitions" />
           <h3>Programming Competitions</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
+          <p> 
           </p>
         </div>
     
         <div class="box">
           <img src="images/ctf.png" alt="Capture the Flag" />
           <h3>Capture the Flag</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
+          <p> 
           </p>
         </div>
     
@@ -228,8 +207,6 @@
           <img src="images/resume.png" alt="Resume Workshops" />
           <h3>Resume Workshops</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
           </p>
         </div>
     
@@ -237,26 +214,20 @@
           <img src="images/speaker.png" alt="Professional Guest Speakers" />
           <h3>Professional Guest Speakers</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
           </p>
         </div>
     
         <div class="box">
           <img src="images/social.png" alt="Social Events" />
           <h3>Social Events</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
+          <p> 
           </p>
         </div>
     
         <div class="box">
           <img src="images/collab.png" alt="Collaborative Projects" />
           <h3>Collaborative Projects</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
+          <p>  
           </p>
         </div>
     
@@ -264,8 +235,6 @@
           <img src="images/console.png" alt="Game Nights" />
           <h3>Game Nights</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
           </p>
         </div>
 
@@ -273,8 +242,6 @@
           <img src="images/coding.png" alt="Game Nights" />
           <h3>Code Review Sessions</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
           </p>
         </div>
 
@@ -282,8 +249,6 @@
           <img src="images/homework.png" alt="Game Nights" />
           <h3>Homework Help</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
-            necessitatibus.
           </p>
         </div>
       </div>
@@ -297,83 +262,58 @@
       <h1 class="heading">our environment</h1>
 
       <div class="box-container">
-        <a href="images/cyberlab.jpg" class="box">
+        <a href="images/cyberlab.jpg" class="box" data-lightbox="environment" data-title="Optional caption">
           <div class="image">
             <img src="images/cyberlab.jpg" alt="" />
           </div>
           <div class="content">
             <div class="info">
               <h3>Cybersecurity Lab</h3>
-              <p>Loren Ipsum</p>
+              <p>LS - 302</p>
             </div>
             <i class="fas fa-plus"></i>
           </div>
         </a>
 
-        <a href="images/complab.jpg" class="box">
+        <a href="images/complab.jpg" class="box" data-lightbox="environment" data-title="Optional caption">
           <div class="image">
             <img src="images/complab.jpg" alt="" />
           </div>
           <div class="content">
             <div class="info">
               <h3>Computer Science Lab</h3>
-              <p>Loren Ipsum</p>
+              <p>LS - 300 Wing</p>
             </div>
             <i class="fas fa-plus"></i>
           </div>
         </a>
 
-        <a href="images/studylab.jpg" class="box">
+        <a href="images/studylab.jpg" class="box" data-lightbox="environment" data-title="Optional caption">
           <div class="image">
             <img src="images/studylab.jpg" alt="" />
           </div>
           <div class="content">
             <div class="info">
               <h3>STEM Study Area</h3>
-              <p>Loren Ipsum</p>
+              <p>LS - 3rd Floor</p>
             </div>
             <i class="fas fa-plus"></i>
           </div>
         </a>
 
-        <a href="images/englab.jpg" class="box">
+        <a href="images/englab.jpg" class="box" data-lightbox="environment" data-title="Optional caption">
           <div class="image">
             <img src="images/englab.jpg" alt="" />
           </div>
           <div class="content">
             <div class="info">
               <h3>Engineering Project Lab</h3>
-              <p>Loren Ipsum</p>
+              <p>LS - First Floor</p>
             </div>
             <i class="fas fa-plus"></i>
           </div>
         </a>
 
-        <a href="images/lattop.jpg" class="box">
-          <div class="image">
-            <img src="images/lattop.jpg" alt="" />
-          </div>
-          <div class="content">
-            <div class="info">
-              <h3>State of the Art Building</h3>
-              <p>Loren Ipsum</p>
-            </div>
-            <i class="fas fa-plus"></i>
-          </div>
-        </a>
-
-        <a href="images/logocolordh.jpg" class="box">
-          <div class="image">
-            <img src="images/logocolordh.jpg" alt="" />
-          </div>
-          <div class="content">
-            <div class="info">
-              <h3>Loren Ipsum</h3>
-              <p>Loren Ipsum</p>
-            </div>
-            <i class="fas fa-plus"></i>
-          </div>
-        </a>
       </div>
     </section>
 
@@ -385,7 +325,8 @@
       <h1 class="heading">our Officers</h1>
 
       <div class="box-container">
-        <a href="images/qing.jpg" class="box">
+        <a href="images/qing.jpg" class="box" data-lightbox="officers" data-title="Dr. Qing Wang is an Associate Professor in
+         the Department of Computer Science, and Advisor to Dev Hawks at the University of Tennessee at Martin.">
           <div class="image">
             <img src="images/qing.jpg" alt="" />
           </div>
@@ -398,33 +339,34 @@
           </div>
         </a>
 
-        <a href="images/cjheadshot.png" class="box">
+        <a href="images/cjheadshot.png" class="box" data-lightbox="officers" data-title="Co-Founder and President of Dev Hawks. Developer of Dev Hawks Website. Junior, Major in Cybersecurity. 
+        1 year as IT Specialist I, Software Engineer at Discovery Park of America. 2x PEP Leader @ University of Tennessee - Martin. Talk to me about anything!">
           <div class="image">
             <img src="images/cjheadshot.png" alt="" />
           </div>
           <div class="content">
             <div class="info">
               <h3>Connor Gladish</h3>
-              <p>President</p>
+              <p>Co-Founder, President</p>
             </div>
             <i class="fas fa-plus"></i>
           </div>
         </a>
 
-        <a href="images/blankuser.jpeg" class="box">
+        <a href="images/blankuser.jpeg" class="box" data-lightbox="officers" data-title="Co-Founder and Vice President of Dev Hawks. Sophomore, Major in Computer Science.">
           <div class="image">
             <img src="images/blankuser.jpeg" alt="" />
           </div>
           <div class="content">
             <div class="info">
               <h3>Josiah Tripp</h3>
-              <p>Vice President</p>
+              <p>Co-Founder, Vice President</p>
             </div>
             <i class="fas fa-plus"></i>
           </div>
         </a>
 
-        <a href="images/blankuser.jpeg" class="box">
+        <a href="images/blankuser.jpeg" class="box" data-lightbox="officers" data-title="Treasurer of Dev Hawks. Sophomore, Major in Information Systems.">
           <div class="image">
             <img src="images/blankuser.jpeg" alt="" />
           </div>
@@ -437,7 +379,7 @@
           </div>
         </a>
 
-        <a href="images/blankuser.jpeg" class="box">
+        <a href="images/blankuser.jpeg" class="box" data-lightbox="officers" data-title="Secretary of Dev Hawks. Sophomore, Major in Computer Science.">
           <div class="image">
             <img src="images/blankuser.jpeg" alt="" />
           </div>
@@ -450,7 +392,7 @@
           </div>
         </a>
 
-        <a href="images/aaronheadshot.png" class="box">
+        <a href="images/aaronheadshot.png" class="box" data-lightbox="officers" data-title="Social Media Ambassador of Dev Hawks. Sophomore, Major in Information Systems.">
           <div class="image">
             <img src="images/aaronheadshot.png" alt="" />
           </div>
@@ -463,7 +405,10 @@
           </div>
         </a>
       </div>
+      
     </section>
+
+    
 
     <!-- Officers section ends -->
 
@@ -520,14 +465,15 @@
 
           <div class="swiper-slide slide">
             <p>
-              Joining DevHawks was the best decision I made in college. 
-              The club meetings were dynamic and inclusive, fostering a collaborative environment where everyone's ideas were valued. 
-              I can confidently say I've expanded my knowledge and skills significantly.
+              Founding Dev Hawks started as a way to get the Computer Science students engaged and to have the ability to learn outside of the classroom.
+              Quickly, I learned that it could be much more than that. Through Dev Hawks, I have seen many individuals break out of their shell,
+              learn something new, and even gain friends they might've never met otherwise. I truly think what our community has allowed us to build will change the
+              Computer Science Department at UTM forever, and I'm happy to be a part of that.
             </p>
             <div class="user">
-              <img src="images/blankuser.jpeg" alt="" />
+              <img src="images/cjheadshot.png" alt="" />
               <div class="info">
-                <h3>Blank name</h3>
+                <h3>Connor Gladish</h3>
                 <div class="stars">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -585,22 +531,14 @@
 
           <div class="swiper-slide slide">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              unde suscipit quis consequuntur, tempora corporis ex molestias
-              dignissimos in cumque sunt ducimus voluptate inventore harum earum
-              rem aperiam vel modi?
+              Like the reviews? Want to be featured on here yourself? 
+              Submit your own review of Dev Hawks by going to the Contact section and emailing us!
+              Be sure to include your name, star rating, and you can even submit your photo to be displayed here.
             </p>
             <div class="user">
               <img src="images/blankuser.jpeg" alt="" />
               <div class="info">
-                <h3>Blank Name</h3>
-                <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
+                <h3>Website Admin</h3>
               </div>
             </div>
           </div>
@@ -627,7 +565,6 @@
             <p>Will Not Be Able To Receive Member-Only Benefits - Such As Shirts And Stickers</p>
             <p>Will Be Able To Have A Great Time Hanging Out With The Club</p>
           </div>
-          <a href="#" class="btn">choose plan</a>
         </div>
 
         <div class="box">
@@ -641,7 +578,6 @@
             <p>Be A Part Of A Growing Community</p>
             <p>Most Popular Option</p>
           </div>
-          <a href="#" class="btn">choose plan</a>
         </div>
 
         <div class="box">
@@ -655,7 +591,6 @@
             <p>Be A Leader In An Amazing Club</p>
             <p>Help Keep Dev Hawks Thriving</p>
           </div>
-          <a href="#" class="btn">choose plan</a>
         </div>
       </div>
     </section>
@@ -675,21 +610,21 @@
           loading="lazy"
         ></iframe>
 
-        <form action="">
-          <h3>get in touch</h3>
-          <input type="text" placeholder="name" class="box" />
-          <input type="email" placeholder="email" class="box" />
-          <input type="number" placeholder="phone" class="box" />
+        <form id="contact-form" action="mailto:devhawksutm@gmail.com" method="post" enctype="text/plain">
+          <h3>Get in touch</h3>
+          <input type="text" placeholder="Name" class="box" id="name" name="name">
+          <input type="email" placeholder="Email" class="box" id="email" name="email">
           <textarea
-            name=""
-            placeholder="message"
+            placeholder="Message"
             class="box"
-            id=""
+            id="message"
+            name="message"
             cols="30"
             rows="10"
           ></textarea>
-          <input type="submit" value="send message" class="btn" />
+          <input type="submit" value="Send Message" class="btn">
         </form>
+        
       </div>
     </section>
 
@@ -730,12 +665,10 @@
 
     <section class="footer">
       <div class="links">
-        <a class="btn" href="#home">home</a>
-        <a class="btn" href="#about">about</a>
-        <a class="btn" href="#services">Our Events</a>
-        <a class="btn" href="#projects">our environment</a>
-        <a class="btn" href="#pricing">pricing</a>
-        <a class="btn" href="#contact">contact</a>
+        <a class="btn" href="https://runway.utm.edu/organization/devhawks">Our UTM Runway</a>
+        <a class="btn" href="https://github.com/DevHawksUTM">Our Github</a>
+        <a class="btn" href="https://devhawksutm.itch.io/">Our Itch.io</a>
+        <a class="btn" href="https://discord.gg/NxN4nKCAHK">Our Discord</a>
       </div>
 
       <div class="credit">
