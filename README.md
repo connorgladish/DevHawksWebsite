@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Welcome to the official GitHub repository of Dev Hawks, the premier club for computer science, cybersecurity, and information systems enthusiasts at [University of Tennessee at Martin]. Our club is dedicated to fostering a community of passionate learners and professionals in technology fields.
+Welcome to the official GitHub repository of Dev Hawks, the premier club for computer science, cybersecurity, and information systems enthusiasts at University of Tennessee at Martin. Our club is dedicated to fostering a community of passionate learners and professionals in technology fields.
 
 Visit our website: [Dev Hawks Website](https://connorgladish.github.io/DevHawksWebsite/)
 
@@ -12,16 +12,16 @@ Visit our website: [Dev Hawks Website](https://connorgladish.github.io/DevHawksW
 
 - **About Us:** Learn about who we are, our mission, and our goals.
 - **Events:** Stay updated on our latest events, workshops, and guest lectures.
-- **Projects:** Explore projects developed by our members.
-- **Resources:** Access useful resources related to computer science, cybersecurity, and information systems.
+- **Environment:** See some of the areas we frequent.
+- **Pricing:** We value transparency. For this reason, our pricing is listed right on our homepage.
 - **Contact:** Reach out to us for inquiries, collaborations, or feedback.
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Hosting:** GitHub Pages
+- **Frontend:** HTML, CSS, JavaScript, FontAwesome
+- **Backend:** Node.js, jQuery, LightBox.js
+- **Database:** MongoDB (WIP)
+- **Hosting:** GitHub Pages, CS1 Server Soon
 
 ## How to Contribute
 
