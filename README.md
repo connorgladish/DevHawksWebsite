@@ -18,7 +18,7 @@ Welcome to the official GitHub repository of Dev Hawks, the premier club for com
 
 ## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, FontAwesome
+- **Frontend:** HTML, CSS, JavaScript, FontAwesome, SCSS
 - **Backend:** Node.js, jQuery, LightBox.js
 - **Database:** MongoDB (WIP)
 - **Hosting:** GitHub Pages, CS1 Server Soon
