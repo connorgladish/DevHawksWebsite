@@ -9,17 +9,6 @@ document.querySelector('#menu-btn').onclick = () =>{
    loginForm.classList.remove('active');
 };
 
-document.querySelector('#search-btn').onclick = () =>{
-   searchForm.classList.toggle('active');
-   navbar.classList.remove('active');
-   loginForm.classList.remove('active');
-};
-
-document.querySelector('#login-btn').onclick = () =>{
-   loginForm.classList.toggle('active');
-   navbar.classList.remove('active');
-   searchForm.classList.remove('active'); 
-};
 
 document.querySelector('#info-btn').onclick = () =>{
    contactInfo.classList.add('active');
@@ -37,64 +26,69 @@ window.onscroll = () =>{
 }
 
 var swiper = new Swiper(".home-slider", {
-   loop:true,
-   grabCursor:true,
+   loop: true,
+   grabCursor: true,
+   autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+   },
+   speed: 1200,
+   effect: 'slide',
    navigation: {
      nextEl: ".swiper-button-next",
      prevEl: ".swiper-button-prev",
    },
+   autoplay: {
+      delay: 4000, // Adjust delay (in ms) between slides
+      disableOnInteraction: false, // Continue autoplay even when user interacts with the slider
+   },
 });
+
 
 var swiper = new Swiper(".reviews-slider", {
-   loop:true,
-   grabCursor:true,
+   loop: true,
+   grabCursor: true,
    spaceBetween: 20,
+   autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+   },
+   speed: 12000, // Adjust speed of slide transition (in ms)
+   effect: 'slide', // Use slide effect for smooth sliding
    breakpoints: {
       640: {
-        slidesPerView: 1,
+         slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,
+         slidesPerView: 2,
       },
       991: {
-        slidesPerView: 3,
+         slidesPerView: 3,
       },
    },
 });
 
-var swiper = new Swiper(".blogs-slider", {
-   loop:true,
-   grabCursor:true,
-   spaceBetween: 20,
-   breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      991: {
-        slidesPerView: 3,
-      },
-   },
-});
+
 
 var swiper = new Swiper(".logo-slider", {
-   loop:true,
-   grabCursor:true,
+   loop: true,
+   grabCursor: true,
    spaceBetween: 20,
+   autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+   },
+   speed: 12000, // Adjust speed of slide transition (in ms)
+   effect: 'slide', // Use slide effect for smooth sliding
    breakpoints: {
       450: {
-         slidesPerView: 2,
-       },
-      640: {
-        slidesPerView: 3,
+         slidesPerView: 4,
       },
-      768: {
-        slidesPerView: 4,
+      640: {
+         slidesPerView: 5,
       },
       1000: {
-        slidesPerView: 5,
+         slidesPerView: 6,
       },
    },
 });
