@@ -92,3 +92,8 @@ var swiper = new Swiper(".logo-slider", {
       },
    },
 });
+
+if (window.console && window.console.firebug) {
+    alert("Firebug is running");
+    // Redirect or disable certain features
+}
