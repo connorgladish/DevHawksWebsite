@@ -542,18 +542,13 @@
           allowfullscreen=""
           loading="lazy"
         ></iframe>
-        <form id="contact-form" action="mailto:devhawksutm@gmail.com" method="post" enctype="text/plain">
+       
+
+        <form id="contact-form" action="process_form.php" method="post">
           <h3>Get in touch</h3>
-          <input type="text" placeholder="Name" class="box" id="name" name="name">
-          <input type="email" placeholder="Email" class="box" id="email" name="email">
-          <textarea
-            placeholder="Message"
-            class="box"
-            id="message"
-            name="message"
-            cols="30"
-            rows="10"
-          ></textarea>
+          <input type="text" placeholder="Name" class="box" id="name" name="name" required>
+          <input type="email" placeholder="Email" class="box" id="email" name="email" required>
+          <textarea placeholder="Message" class="box" id="message" name="message" cols="30" rows="10" required></textarea>
           <input type="submit" value="Send Message" class="btn">
         </form>
         
