@@ -1,13 +1,13 @@
 # Welcome To The Dev Hawks Website
 
-![Dev Hawks Logo](images/transpdh.png)
+![Dev Hawks Logo](images/logos/transpdh.png)
 
 ## Introduction
 
 Welcome to the official GitHub repository of Dev Hawks, the premier club for computer science, cybersecurity, and information systems enthusiasts at University of Tennessee at Martin. Our club is dedicated to fostering a community of passionate learners and professionals in technology fields.
 
-![top.png](images/topdh.png)
-![mid.png](images/middh.png)
+![top.png](images/readmemedia/topdh.png)
+![mid.png](images/readmemedia/middh.png)
 
 ## **Visit our website: [Dev Hawks Website](https://connorgladish.github.io/DevHawksWebsite/)**
 
