@@ -18,13 +18,14 @@ Welcome to the official GitHub repository of Dev Hawks, the premier club for com
 - **Environment:** See some of the areas we frequent.
 - **Pricing:** We value transparency. For this reason, our pricing is listed right on our homepage.
 - **Contact:** Reach out to us for inquiries, collaborations, or feedback.
+- **Museum:** Showcase of winners of competitions, Game jams, etc. This is currently a WIP.
 
 ## Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript, FontAwesome, SCSS
-- **Backend:** Node.js, jQuery, LightBox.js
+- **Backend:** Node.js, jQuery, LightBox.js, PHP
 - **Database:** MongoDB (WIP)
-- **Hosting:** GitHub Pages, CS1 Server Soon
+- **Hosting:** GitHub Pages, GoDaddy
 
 ## How to Contribute
 
