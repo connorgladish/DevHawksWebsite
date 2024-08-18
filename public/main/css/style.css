@@ -202,33 +202,18 @@ section {
   background: var(--header-background-color);
 }
 
-/* Ensure the logo is aligned with the text */
 .header .logo {
-  display: flex;
-  align-items: center; /* Align items vertically centered */
-  text-decoration: none; /* Remove underline from the link */
-  font-size: 3rem; /* Adjust text size here */
-
-}
-
-.header .logo-img {
-  height: 10rem; /* Adjust the size of the logo */
-  margin-right: 1rem; /* Space between the logo and text */
-  margin-right: 1rem !important;
-  max-width: 100%; /* Make sure it doesn't exceed the container */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
-  max-height: 4rem; /* Limit height */
-
-
+  font-size: 2.5rem;
+  color: var(--header-dev-color);
+  text-transform: capitalize;
 }
 
 .header .logo span {
-  color: var(--yellow); /* Color for the span part of the logo text */
+  color: var(--yellow);
 }
 
 .header .navbar a {
-  font-size: 2.4rem;
+  font-size: 2rem;
   color: var(--header-navbar-color);
   text-transform: capitalize;
   margin: 0 1rem;
