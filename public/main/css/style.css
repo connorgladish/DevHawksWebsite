@@ -202,18 +202,26 @@ section {
   background: var(--header-background-color);
 }
 
+/* Ensure the logo is aligned with the text */
 .header .logo {
-  font-size: 2.5rem;
-  color: var(--header-dev-color);
-  text-transform: capitalize;
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+  text-decoration: none; /* Remove underline from the link */
+  font-size: 3rem; /* Adjust text size here */
+
+}
+
+.header .logo-img {
+  height: 10rem; /* Adjust the size of the logo */
+  margin-right: 1rem; /* Space between the logo and text */
 }
 
 .header .logo span {
-  color: var(--yellow);
+  color: var(--yellow); /* Color for the span part of the logo text */
 }
 
 .header .navbar a {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--header-navbar-color);
   text-transform: capitalize;
   margin: 0 1rem;
