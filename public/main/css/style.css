@@ -214,6 +214,7 @@ section {
 .header .logo-img {
   height: 10rem; /* Adjust the size of the logo */
   margin-right: 1rem; /* Space between the logo and text */
+  margin-right: 1rem !important;
 }
 
 .header .logo span {
