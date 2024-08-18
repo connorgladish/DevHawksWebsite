@@ -1,24 +1,36 @@
+// Existing JS code
 let navbar = document.querySelector('.header .navbar');
 let searchForm = document.querySelector('.header .search-form');
 let loginForm = document.querySelector('.header .login-form');
 let contactInfo = document.querySelector('.contact-info');
+let darkModeToggle = document.querySelector('#dark-mode-toggle');
+let popup = document.getElementById('work-in-progress-popup');
+let closePopup = document.getElementById('close-popup');
 
-document.querySelector('#menu-btn').onclick = () =>{
+// Dark mode toggle functionality
+darkModeToggle.onclick = () => {
+   if (document.documentElement.getAttribute('data-theme') === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
+   } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+   }
+};
+
+document.querySelector('#menu-btn').onclick = () => {
    navbar.classList.toggle('active');
    searchForm.classList.remove('active');
    loginForm.classList.remove('active');
 };
 
-
-document.querySelector('#info-btn').onclick = () =>{
+document.querySelector('#info-btn').onclick = () => {
    contactInfo.classList.add('active');
 }
 
-document.querySelector('#close-contact-info').onclick = () =>{
+document.querySelector('#close-contact-info').onclick = () => {
    contactInfo.classList.remove('active');
 }
 
-window.onscroll = () =>{
+window.onscroll = () => {
    navbar.classList.remove('active');
    loginForm.classList.remove('active');
    contactInfo.classList.remove('active');
@@ -43,7 +55,6 @@ var swiper = new Swiper(".home-slider", {
    },
 });
 
-
 var swiper = new Swiper(".reviews-slider", {
    loop: true,
    grabCursor: true,
@@ -66,8 +77,6 @@ var swiper = new Swiper(".reviews-slider", {
       },
    },
 });
-
-
 
 var swiper = new Swiper(".logo-slider", {
    loop: true,
@@ -96,3 +105,18 @@ if (window.console && window.console.firebug) {
     alert("Firebug is running");
     // Redirect or disable certain features
 }
+
+// New code for the work-in-progress popup
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if the popup has been closed before
+    if (!localStorage.getItem('popup-closed')) {
+        popup.style.display = 'flex'; // Show the popup if not closed
+    }
+
+    // Close the popup when the close button is clicked
+    closePopup.addEventListener('click', function() {
+        popup.style.display = 'none';
+        localStorage.setItem('popup-closed', 'true'); // Save state in local storage
+    });
+});
+localStorage.removeItem('popup-closed');

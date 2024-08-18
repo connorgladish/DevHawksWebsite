@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+/*This is the Light Mode Presets*/
 :root {
   --yellow: #e26b0a;
   --black: #111;
@@ -7,6 +8,39 @@
   --light-bg: #eee;
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  --background-color-btn: #111;
+  --btn-text-color: #fff;
+  --header-background-color: #fff;
+  --header-dev-color: #111;
+  --header-navbar-color: #111;
+  --header-icons-background-color: #eee;
+  --sliders-arrows-color: var(--black);
+  --sliders-arrows-box-color: var(--white);
+  --environ-bg-color: #151515;
+
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --yellow: #e26b0a;
+  --black: #111;
+  --white: #fff;
+  --light-color: #666;
+  --light-bg: #eee;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  --background-color-btn: #111;
+  --btn-text-color: #fff;
+  --header-background-color: #151515;
+  --header-dev-color: #fff;
+  --header-navbar-color: #fff;
+  --header-icons-background-color: #eee;
+  --header-close-contact-color: #fff;
+  --header-info-heading-color: var(--white);
+  --sliders-arrows-color: var(--white);
+  --sliders-arrows-box-color: var(--black);
+  --about-header-color: var(--yellow);
+  --environ-bg-color: var(--header-background-color);
 }
 
 * {
@@ -25,6 +59,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
+  background-color: var(--header-background-color);
 }
 
 html::-webkit-scrollbar {
@@ -43,6 +78,67 @@ section {
   padding: 5rem 10%;
 }
 
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  align-items: center;
+  justify-content: center;
+  z-index: 10000; /* Make sure it's on top of other content */
+}
+
+/* Popup content styling */
+.popup-content {
+  position: relative; /* Ensure positioning for close button */
+  background: var(--yellow);
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  overflow: auto; /* Handle overflow in case of long content */
+}
+
+/* Styling for the close button */
+.close-btn {
+  position: absolute; /* Position it relative to .popup-content */
+  top: -6px;
+  right: 5px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333; /* Color of the close button */
+}
+
+.popup p {
+  font-size: 14px;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  .popup-content {
+      padding: 15px;
+  }
+
+  .popup p {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popup-content {
+      padding: 10px;
+  }
+
+  .popup p {
+      font-size: 10px;
+  }
+}
 .heading {
   margin-bottom: 3rem;
   font-size: 3rem;
@@ -56,8 +152,8 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  background: var(--black);
-  color: var(--white);
+  background: var(--background-color-btn);
+  color: var(--btn-text-color);
   cursor: pointer;
   font-size: 1.7rem;
   text-transform: capitalize;
@@ -103,12 +199,12 @@ section {
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 1000;
-  background: var(--white);
+  background: var(--header-background-color);
 }
 
 .header .logo {
   font-size: 2.5rem;
-  color: var(--black);
+  color: var(--header-dev-color);
   text-transform: capitalize;
 }
 
@@ -118,7 +214,7 @@ section {
 
 .header .navbar a {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--header-navbar-color);
   text-transform: capitalize;
   margin: 0 1rem;
 }
@@ -132,11 +228,26 @@ section {
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
-  background: var(--light-bg);
+  background: var(--header-icons-background-color);
   color: var(--black);
   cursor: pointer;
   text-align: center;
   margin-left: 0.3rem;
+}
+.toggle-button {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: var(--header-icons-background-color);
+  color: var(--black);
+  cursor: pointer;
+  text-align: center;
+  margin-left: 0.3rem;
+    
+}
+.toggle-button:focus {
+    outline: none;
 }
 
 .header .icons div:hover {
@@ -153,7 +264,7 @@ section {
   top: 0;
   right: 0;
   width: 35rem;
-  background: var(--white);
+  background: var(--header-background-color);
   height: 100%;
   text-align: center;
   z-index: 1100;
@@ -174,7 +285,7 @@ section {
   right: 1.5rem;
   cursor: pointer;
   font-size: 4rem;
-  color: var(--black);
+  color: var(--header-close-contact-color);
 }
 
 .contact-info #close-contact-info:hover {
@@ -191,7 +302,7 @@ section {
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
-  background: var(--light-bg);
+  background: var(--yellow);
   color: var(--black);
   cursor: pointer;
   text-align: center;
@@ -205,7 +316,7 @@ section {
 
 .contact-info .info h3 {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--header-info-heading-color);
   text-transform: capitalize;
   padding: 1rem 0;
 }
@@ -227,7 +338,7 @@ section {
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
-  background: var(--light-bg);
+  background: var(--yellow);
   color: var(--black);
   cursor: pointer;
   text-align: center;
@@ -295,7 +406,7 @@ section {
   height: 7rem;
   width: 7rem;
   line-height: 7rem;
-  background: var(--white);
+  background: var(--header-background-color);
 }
 
 .home .swiper-button-next:hover,
@@ -306,11 +417,15 @@ section {
 .home .swiper-button-next::after,
 .home .swiper-button-prev::after {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--sliders-arrows-color);
 }
 
 .home .swiper-button-prev {
   right: 7rem;
+}
+
+.about .heading {
+  color: var(--header-close-contact-color);
 }
 
 .about .row {
@@ -343,7 +458,7 @@ section {
 
 .about .row .content h3 {
   font-size: 3.5rem;
-  color: var(--black);
+  color: var(--header-close-contact-color);
   text-transform: capitalize;
 }
 
@@ -386,9 +501,11 @@ section {
 }
 
 .events {
-  background: var(--light-bg);
+  background: var(--header-background-color);
 }
-
+.events .heading {
+  color: var(--header-close-contact-color)
+}
 .events .box-container {
   display: -ms-grid;
   display: grid;
@@ -425,19 +542,13 @@ section {
   padding: 1rem 0;
 }
 
-.events .box-container .box p {
-  font-size: 1.4rem;
-  color: var(--light-color);
-  line-height: 2;
-}
-
 
 
 
 
 
 .environments {
-  background: var(--black);
+  background: var(--environ-bg-color);
 }
 
 .environments .heading {
@@ -519,7 +630,7 @@ section {
 
 
 .officers {
-  background: var(--black);
+  background: var(--environ-bg-color);
 }
 
 .officers .heading {
@@ -600,7 +711,9 @@ section {
 
 
 
-
+.reviews .heading {
+  color: var(--header-close-contact-color);
+}
 .reviews .slide p {
   padding: 1.5rem;
   background: var(--light-bg);
@@ -640,7 +753,7 @@ section {
 
 .reviews .slide .user h3 {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--header-close-contact-color);
   text-transform: capitalize;
 }
 
@@ -715,7 +828,7 @@ section {
 }
 
 .contact {
-  background: var(--black);
+  background: var(--environ-bg-color);
 }
 
 .contact .heading {
@@ -845,7 +958,7 @@ section {
 
 .footer .credit {
   font-size: 2rem;
-  color: var(--black);
+  color: var(--header-close-contact-color);
   text-transform: capitalize;
   margin-top: 2rem;
   padding-top: 1rem;

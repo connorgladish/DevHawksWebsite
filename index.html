@@ -13,6 +13,10 @@
     />
     <link
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
     />
     <link
@@ -30,6 +34,15 @@
   </head>
   <body>
     <!-- header section starts  -->
+     <!-- Work in Progress Notification -->
+     <div id="work-in-progress-popup" class="popup">
+      <div class="popup-content">
+          <span id="close-popup" class="close-btn">&times;</span>
+          <p><b>PLEASE KEEP IN MIND: <br>THIS SITE IS A 
+            <u>WORK IN PROGRESS</u> FROM ONE DEVELOPER. <br>THERE WILL BE BUGS,
+             AND IT IS NOT IN ITS FINAL STATE. THANK YOU!<br><br> - CJ</b></p>
+      </div>
+  </div>
     <header class="header">
       <a href="#" class="logo">Dev<span>Hawks</span></a>
       <nav class="navbar">
@@ -44,6 +57,11 @@
       <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>
         <div id="info-btn" class="fas fa-info-circle"></div>
+        <button id="dark-mode-toggle" class="toggle-button">
+          <i class="fa fa-moon-o"></i>
+      </button>
+</button>
+
       </div>
     </header>
     <div class="contact-info">
@@ -154,7 +172,7 @@
     <!-- home section ends -->
     <!-- about section starts  -->
     <section class="about" id="about">
-      <h1 class="heading">about us</h1>
+      <h1 class= "heading"> about us </h1>
       <div class="row">
         <div class="video">
           <video src="/images/misc/LatimerSmith_0.mp4" loop muted autoplay></video>
@@ -336,7 +354,7 @@
           </div>
         </a>
         <a href="/images/headshots/cjheadshot.png" class="box" data-lightbox="officers" data-title="Co-Founder and President of Dev Hawks. Developer of Dev Hawks Website. Junior, Major in Cybersecurity. 
-        1 year as IT Specialist I, Software Engineer at Discovery Park of America. 2x PEP Leader @ University of Tennessee - Martin. Talk to me about anything!">
+        1 year as IT Specialist I, Software Engineer at Discovery Park of America. 2x PEP Leader @ University of Tennessee - Martin. I also go by CJ. Talk to me about anything!">
           <div class="image">
             <img src="/images/headshots/cjheadshot.png" alt="" />
           </div>
