@@ -215,6 +215,12 @@ section {
   height: 10rem; /* Adjust the size of the logo */
   margin-right: 1rem; /* Space between the logo and text */
   margin-right: 1rem !important;
+  max-width: 100%; /* Make sure it doesn't exceed the container */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 4rem; /* Limit height */
+
+
 }
 
 .header .logo span {
