@@ -41,6 +41,24 @@
   --sliders-arrows-box-color: var(--black);
   --about-header-color: var(--yellow);
   --environ-bg-color: var(--header-background-color);
+  --dhblue: rgba(26, 26, 180, 0.933);
+  --peaceful-grey: grey;
+  --pink-for-testing: pink;
+  --objective-greyblack: black;
+  --imagingblack: black;
+  --poprocks-red: red;
+  --testing-blue: lightblue;
+  --darkred: var(--darkred);
+  --blacktesting: black;
+  --greenfortesting: rgb(9, 94, 9);
+  --thisisatestingpurple: rgb(67, 11, 67);
+  --data-dark-theme-orange: var(--data-dark-theme-orange);
+  --animation-dark-theme-webkit-black: black;
+  --testing-font-style-orange: orange;
+  --loudyellow: yellow;
+  --ripofdarkbluebg: var(--testing-blue);
+  --thistest-data: rgb(97, 65, 5);
+  
 }
 
 * {
@@ -207,7 +225,7 @@ section {
   display: flex;
   align-items: center; /* Align items vertically centered */
   text-decoration: none; /* Remove underline from the link */
-  font-size: 3rem; /* Adjust text size here */
+  font-size: 2.9rem; /* Adjust text size here */
 
 }
 
@@ -781,6 +799,11 @@ section {
   color: var(--yellow);
 }
 
+
+
+
+
+
 .pricing {
   background: var(--light-bg);
 }
@@ -842,6 +865,12 @@ section {
   line-height: 2;
 }
 
+
+
+
+
+
+
 .contact {
   background: var(--environ-bg-color);
 }
@@ -898,6 +927,10 @@ section {
   resize: none;
 }
 
+
+
+
+
 .blogs {
   background: var(--light-bg);
 }
@@ -949,6 +982,10 @@ section {
   line-height: 2;
 }
 
+
+
+
+
 .logo-container {
   text-align: center;
 }
@@ -961,6 +998,9 @@ section {
       -ms-user-select: none;
           user-select: none;
 }
+
+
+
 
 .footer {
   text-align: center;
@@ -978,6 +1018,10 @@ section {
   margin-top: 2rem;
   padding-top: 1rem;
 }
+
+
+
+
 
 .footer .credit span {
   color: var(--yellow);
