@@ -119,4 +119,3 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('popup-closed', 'true'); // Save state in local storage
     });
 });
-localStorage.removeItem('popup-closed');
