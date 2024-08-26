@@ -457,6 +457,9 @@ section {
   right: 7rem;
 }
 
+.about h1 {
+  color: var(--header-close-contact-color);
+}
 .about .heading {
   color: var(--header-close-contact-color);
 }
