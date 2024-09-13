@@ -676,8 +676,8 @@ section {
 .officers .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(5rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
   gap: 2rem;
 }
 
@@ -719,7 +719,7 @@ section {
 }
 
 .officers .box-container .box .content .info h3 {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: var(--black);
   text-transform: capitalize;
 }
@@ -934,56 +934,6 @@ section {
 
 
 
-.blogs {
-  background: var(--light-bg);
-}
-
-.blogs .slide {
-  text-align: center;
-}
-
-.blogs .slide:hover .image img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.blogs .slide .image {
-  height: 25rem;
-  width: 90%;
-  overflow: hidden;
-  margin: 0 auto;
-  margin-bottom: -3rem;
-}
-
-.blogs .slide .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-}
-
-.blogs .slide .content {
-  padding: 2rem;
-  padding-top: 5rem;
-  background: var(--white);
-  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
-}
-
-.blogs .slide .content h3 {
-  font-size: 2rem;
-  color: var(--black);
-  text-transform: capitalize;
-}
-
-.blogs .slide .content p {
-  padding: 1rem 0;
-  font-size: 1.4rem;
-  color: var(--light-color);
-  line-height: 2;
-}
 
 
 
